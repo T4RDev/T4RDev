@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    background-image: url('/kame-house-island-dragon-ball-uhdpaper.com-4K-6.2501.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Itim', cursive;
+    font-weight: 400;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    color: black;
+}
+
+#diary-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+#diary-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#diary-entry {
+    background-color: rgb(255, 226, 226);
+    width: 95%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.heart-button:hover {
+    background-color: transparent;
+}
+
+#diary-entries {
+    max-width: 400px;
+    margin: auto;
+}
+
+.diary-entry {
+    position: relative;
+    background-color: rgb(255, 226, 226);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.entry-date {
+    font-size: 12px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.heart-button {
+    position: absolute;
+    bottom: -20px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ff1900;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,  
+        -1px 1px 0 #000,  
+        1px 1px 0 #000;
+}
+
+.heart-button.liked {
+    color: #ff1900;
+}
+
+.heart-count {
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#toggle-entries {
+    margin-left: 10px;
+    left: 230px;
+    position: relative;
+}
+
+.entry-content {
+    font-size: 18px;
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    color: black;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
